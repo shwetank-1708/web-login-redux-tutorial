@@ -6,6 +6,10 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const registerHandle = () => {
+    console.log(name, email, password);
+  };
+
   return (
     <div>
       <div className="">
@@ -34,7 +38,7 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
         ></input>
 
-        <button>Register</button>
+        <button onClick={registerHandle}>Register</button>
       </div>
     </div>
   );
